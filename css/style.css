@@ -1,0 +1,204 @@
+/******** Google Fonts ********/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/** ****** Color Scheme ****** **/
+:root {
+  --clr-primary-400: #d25a5a;
+
+  --clr-neutral-100: #ffffff;
+  --clr-primary-900: #000000;
+    
+  --ff-primary: 'Montserrat', sans-serif;
+}
+
+/** ****** CSS Resets ****** **/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a:focus, a:hover {
+  outline: none;
+}
+
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+  color: var(--clr-primary-900);
+  line-height: 18px;
+  font-weight: 400;
+}
+
+body {
+  font-family: var(--ff-body);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-primary);
+  margin-bottom: 0;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/** ****** Utility Classes ******* */
+.container {
+  max-width: 1440px;
+}
+.fixed-top  {
+  background-color: var(--c-white-800) !important;
+}
+@media only screen and (max-width: 991px){
+  .container {
+      --bs-gutter-x: 1rem;
+  }
+}
+
+/** ****** Custom Properties ******* */
+.custom-pad {
+  padding: 60px 0;
+}
+
+.custom-button  {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-primary);
+  color: var(--c-white-900);
+  border: 2px solid transparent;
+
+  font-family: var(--ff-primary);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  /* width: 171px; */ 
+        /* or */
+  padding: 0px 32px;
+  height: 56px;
+
+  border-radius: 50px;
+
+  position: relative;
+}
+
+/* If there is a button icon */
+.custom-button {
+  gap: 0 10px;
+}
+
+.custom-button span {
+  margin: 0;
+}
+/* Basic Button Hover */
+.custom-button:hover {
+  background-color: transparent;
+  color: var(--c-primary);
+  border-color: var(--c-primary);
+  animation: headShake 2s;
+}
+
+.custom-button_form {
+  background-color: transparent;
+  padding: 0;
+  font: inherit; /* add custom-button fonts */
+  color: inherit; /* add custom-button color */
+  text-transform: inherit; /* add custom-button text-transform */
+  border: none;
+}
+
+/** =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ HOMEPAGE START =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ */
+
+/** ----------------------------
+*      Section: Header Start
+**  --------------------------*/
+.header {
+  /* change header bg here */
+  background-color: var(--c-white);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  color: #000000;
+}
+
+.navbar-toggler {
+  position: relative;
+  padding: 9px 10px;
+  background-image: none;
+  border: 1px solid transparent;
+  margin: 0;
+  height: 45px;
+  width: 45px;
+  border-radius: 0;
+  z-index: 9999;
+}
+
+.navbar-toggler { 
+  /*change the hamburger menu bg */
+  background-color: black;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar { 
+  /*change the hamburger bars color */
+  background-color: #fff;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+/** ----------------------------
+*      Section: Header End
+**  --------------------------*/
+
+/** ----------------------------
+*      Section: Name Start
+**  --------------------------*/
+/** ----------------------------
+*      Section: Name End
+**  --------------------------*/
+
+/** =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ HOMEPAGE END =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ */
