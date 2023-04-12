@@ -23,12 +23,12 @@ $('#custom-owl').owlCarousel({
 // ************************************************* //
 
     $(window).on('scroll', function() {
-       if($(this).scrollTop() > 200 ) {
+       if($(this).scrollTop() > 300 ) {
        $(".header").addClass("fixed-top");
-       $(".header-top").slideUp();
+       $(".header__top").slideUp();
       } else {
        $(".header").removeClass("fixed-top");
-       $(".header-top").slideDown();
+       $(".header__top").slideDown();
       }
     });
     $(".navbar-toggler").on('click', function()  {
