@@ -18,11 +18,25 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1200px){
-	
+	.header__nav .navbar-nav {gap: 0 20px;padding-right: 16px;}
+  .header__nav-contact {padding-left: 16px;gap: 0 20px;}
+  .header__nav .navbar-brand img {width: 180px;object-fit: contain;}
+
+  .hero .carousel-item img {height: 700px;}
+  .counter-up-wrapper {gap: 15px 0;}
+  .counter__right {padding-left: 0px;}
+  .counter-box {padding: 24px 32px;}
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
-	
+	.header__nav .navbar-nav {gap: 0 20px;padding-right: 16px;}
+  .header__nav-contact {padding-left: 16px;gap: 0 20px;}
+  .header__nav .navbar-brand img {width: 180px;object-fit: contain;}
+  
+  .hero .carousel-item img {height: 700px;}
+  .counter-up-wrapper {gap: 15px 0;}
+  .counter__right {padding-left: 0px;}
+  .counter-box {padding: 23px 32px;}
 }
 
 @media only screen and (max-width: 991.98px) {    
