@@ -322,14 +322,15 @@ svg {
 
 .navbar-toggler { 
   /*change the hamburger menu bg */
-  background-color: black;
+  background-color: transparent;
 }
 
 .navbar-toggler .icon-bar {
   display: block;
-  width: 22px;
+  width: 30px;
   height: 2px;
   border-radius: 1px;
+  transition: all 0.5s ease-in-out;
 }
 
 .navbar-toggler .icon-bar { 
@@ -413,6 +414,7 @@ svg {
   font-size: 18px;
   color: var(--clr-neutral-100);
   font-weight: 600;
+  transition: all 0.5s ease-in-out;
 }
 .header__nav .contact-call-link {
   font-size: 18px;
@@ -432,9 +434,29 @@ svg {
   gap: 0 32px;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
-.fixed-top .header__nav {
+.header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+.fixed .header__nav {
   background-color: rgba(0 0 0 / 0.6);
   backdrop-filter: blur(8px);
+}
+.fixed .header__nav .navbar  {
+  border: none;
+}
+.navbar-brand img {
+  transition: all 0.5s ease-in-out;
+  height: 70px;
+}
+.fixed .header__nav .navbar .nav-item > a {
+  padding: 15px 0;
+  transition: all 0.5s ease-in-out;
+}
+.fixed .navbar-brand img {
+  height: 60px;
+  transition: all 0.5s ease-in-out;
 }
 /** ----------------------------
 *      Section: Header End
