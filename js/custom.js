@@ -23,11 +23,11 @@ $('#custom-owl').owlCarousel({
 // ************************************************* //
 
 $(window).on('scroll', function() {
-    if($(this).scrollTop() > 300 ) {
-    $(".header").addClass("fixed-top");
+    if(  $(this).scrollTop()  ) {
+    $(".header").addClass("fixed");
     $(".header__top").slideUp();
   } else {
-    $(".header").removeClass("fixed-top");
+    $(".header").removeClass("fixed");
     $(".header__top").slideDown();
   }
 });
